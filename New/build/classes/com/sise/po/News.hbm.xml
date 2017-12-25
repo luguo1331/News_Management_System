@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.sise.po">
+  <class name="News" table="news">
+     <id name="news_id" type="string">
+        <generator class="uuid"/>
+     </id>
+   <property name="news_title" type="string" not-null="true" length="30"/>
+   <property name="news_content" type="string"/>
+   <property name="news_upload_time" type="timestamp"/>
+   <property name="author" type="string"/>
+   	<many-to-one name="category" class="Category" column="news_category" />
+  </class>
+</hibernate-mapping>

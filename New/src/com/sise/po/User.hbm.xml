@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sise.po">
+	<class name="User" table="user">
+		<id name="user_id" type="string">
+			<generator class="uuid" />
+		</id>
+		<property name="user_name" type="string" not-null="true" />
+		<property name="user_password" type="string" not-null="true"/>
+		<property name="user_role" type="string" not-null="true" />
+		<property name="user_account" type="string" not-null="true" />
+	</class>
+</hibernate-mapping>

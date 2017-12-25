@@ -1,0 +1,163 @@
+/*鍏叡鏍峰紡瑕嗙洊*/
+.unite-title{
+	margin: 0;
+	border-bottom: 3px solid #e5e5e5;
+    height: 50px;
+    position: relative;
+}
+.unite-title h2{
+    position: absolute;
+    bottom: -3px;
+}
+
+
+/*澶撮儴寮�濮�*/
+.nav-bg{
+	line-height: 60px;
+}
+.nav-bg ul{
+	float: left;
+}
+.login-box{
+	padding: 0 35px;
+}
+.login-box a{
+	transition: color .5s;
+	color: rgba(255,255,255,.7);
+}
+.nav-bg .login-box a:hover{
+	color: rgba(255,255,255,1);
+	font-weight: 800;
+}
+/*澶撮儴缁撴潫*/
+
+/*涓讳綋寮�濮�*/
+.main{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0 0;
+}
+.main a:hover{
+	text-decoration: underline;
+}
+.main-left{
+	width: 650px;
+	float: left;
+	margin-bottom: 40px;
+	padding:0 0 280px 0;
+}
+.unite-title form{
+    float: right;
+    margin-top: 8px;
+}
+.search{
+    width: 235px;
+    display: inline-block;
+}
+.main-right{
+	width: 300px;
+	/*height: 500px;*/
+	margin-top: 10px;
+	margin-bottom: 40px;
+	/*background-color: rgba(56,7,8,1);*/
+	float: right;
+	padding:0 0 280px 0;
+}
+.body-list li{
+	position: relative;
+	padding-right: 90px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 16px;
+	border-bottom: 1px solid #dcdcdc;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.span-time{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 80px;
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+}
+.aside-box{
+	margin-bottom: 25px;
+}
+.aside-title{
+	border-left: 5px solid #1787e0;
+	padding: 0 10px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	color: #333333;
+	background-color: #f0f0f0;
+}
+.aside-body{
+	border: 1px solid #F0F0F0;
+	border-top: 0;
+	padding: 12px 16px;
+}
+.ib-items{
+	/*height: 40px;
+	line-height: 40px;*/
+	height: 28px;
+	line-height: 28px;
+}
+.dot-icon{
+	float: left;
+	width: 4px;
+	height: 4px;
+	background: #ccc;
+	border-radius: 2px;
+	margin-right: 10px;
+	margin-top: 13px;
+}
+.ib-news{
+	/*color: red;*/
+	float: left;
+	width: 83%;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ky-tool{
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	/*margin-right: 25px;
+	margin-bottom: 5px;
+	margin-top: 5px;*/
+	margin: 10px 0 0 0;
+	background-color: #f7f9fa;
+}
+.tool-title{
+	width: 20px;
+	padding: 0 5px;
+	height: 100%;
+	line-height: 24px;
+	text-align: center;
+	background-color: #1787E0;
+	color: #FFF;
+	vertical-align: middle;
+}
+.tool-content{
+    padding: 15px 0 10px 13px;
+	overflow: hidden;
+	line-height: 1.2;
+}
+.tool-content a{
+	display: inline-block;
+	width: 73px;
+	overflow: hidden;
+	margin: 5px 10px 5px 0;
+}
+.line{
+	height: 0;
+	margin: 10px 0;
+	border-bottom: 1px dotted #DDDDDD;
+}

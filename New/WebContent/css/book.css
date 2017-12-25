@@ -1,0 +1,49 @@
+.booklist{
+	width: 100%;
+	margin: 10px 10px;
+	display: inline-block;
+}
+.booklist em{
+	width: 72px;
+	height: 100px;
+	float: left;
+}
+.booklist em img{
+	width: 72px;
+	height: 100px;
+}
+.booklist li{
+	display: inline-block;
+	width: 264px;
+	padding-bottom: 20px;
+	margin-right: 59px;
+}
+.bookinfo{
+	width: 180px;
+	float: right;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: -2px;
+	height: 106px;
+	position: relative;
+}
+.bookinfo a:hover{
+	color: #1787e0;
+}
+.bookinfo p:nth-child(1){
+	margin-bottom: 5px;
+}
+.bookinfo p:nth-child(2){
+	height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3; 
+}
+.bookinfo p:nth-child(3){
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #999;
+}

@@ -1,0 +1,140 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+.body {
+	width: 100%;
+	position: relative
+}
+
+.clear {
+	
+}
+
+a:hover {
+	text-decoration: none
+}
+/*鏍囬寮�濮�*/
+.header {
+	width: 1000px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.logo span {
+	font-size: 26px;
+	font-weight: 800;
+	color: rgba(0, 150, 136, 1);
+}
+
+.login-box {
+	display: inline-block;
+	float: right;
+}
+
+.login-box span {
+	margin: 0 10px;
+}
+
+.login-box span a:hover {
+	color: rgba(0, 150, 136, 1);
+}
+/*鏍囬缁撴潫*/
+
+/*瀵艰埅鏍忓紑濮�*/
+.nav {
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(0, 150, 136, 1);
+}
+
+.nav-bg {
+	width: 1000px;
+	height: 60px;
+	margin: 0 auto;
+}
+/*瀵艰埅鏍忕粨鏉�*/
+
+/*鍐呭寮�濮�*/
+.unite-title {
+	width: 100%;
+	display: block;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #e5e5e5;
+	cursor: default;
+}
+
+.unite-title h2 {
+	display: inline-block;
+	font-size: 26px;
+	padding: 6px 0;
+	border-bottom: 3px solid #1787e0;
+}
+
+/*鍐呭缁撴潫*/
+
+/*椤佃剼寮�濮�*/
+.footer {
+	width: 100%;
+	height: 250px;
+	display: block;
+	background-color: rgba(40, 40, 40, 1);
+}
+
+.footerbg {
+	width: 1000px;
+	height: 250px;
+	display: block;
+	margin: 0 auto;
+	color: #ababab;
+}
+
+.footerbg a {
+	color: #ababab;
+	margin-right: 15px;
+}
+
+.footerbg a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footerbg p {
+	margin-bottom: 10px;
+}
+
+.footerbg-l {
+	height: 100%;
+	width: 510px;
+	float: left;
+}
+
+.footer-list {
+	margin-top: 50px;
+}
+
+.footer-units {
+	margin-top: 35px;
+}
+
+.footerbg-r {
+	/*height: 100%;*/
+	float: right;
+	padding-top: 50px;
+}
+/*椤佃剼缁撴潫*/
+.footer {
+	position: absolute;
+	bottom: 0；
+}

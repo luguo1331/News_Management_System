@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- 先配置包结构 -->
+	<package name="admin" extends="struts-default" namespace="/">
+		<!-- 声明拦截器 -->
+		<interceptors>
+			<interceptor name="userInterceptor" class="com.sise.interceptor.UserInterceptor" />
+			<!-- 定义一个拦截器栈myStack,该拦截器栈包含一个拦截器和一个拦截器栈 -->
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="userInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+
+		<global-results>
+			<result name="login" type="redirect">/jsp/login.jsp</result>
+		</global-results>
+		<!-- 配置类型的模块 -->
+		<action name="admin_*" class="categoryAction" method="{1}">
+			<result name="index">/jsp/admin/index.jsp</result>
+			<result name="addCategory">/jsp/admin/addCategory.jsp</result>
+			<result name="updateCategory">/jsp/admin/updateCategory.jsp</result>
+			<result name="displayCategory" type="redirectAction">
+				<param name="actionName">admin_index</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="listNews">/jsp/admin/listNews.jsp</result>
+			<!-- 在action中使用自定义拦截器 -->
+			<interceptor-ref name="myStack" />
+		</action>
+
+		<!-- 配置新闻的模块 -->
+		<action name="news_*" class="newsAction" method="{1}">
+			<result name="listNews">/jsp/admin/listNews.jsp</result>
+			<result name="newsAdd">/jsp/admin/newsAdd.jsp</result>
+			<result name="editNews">/jsp/admin/editNews.jsp</result>
+			<result name="showNews">/jsp/admin/showNews.jsp</result>
+			<result name="displayNews" type="redirectAction">
+				<param name="actionName">news_listNews</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+
+		<action name="index_*" class="indexAction" method="{1}">
+			<result name="index">/jsp/index.jsp</result>
+		</action>
+
+		<action name="login_*" class="loginAction" method="{1}">
+			<result name="success" type="redirectAction">
+				<param name="actionName">admin_index</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="input">/jsp/login.jsp</result>
+		</action>
+	</package>
+
+</struts>
+
+
+
+
+
+
+
+
+
+
+
+
+

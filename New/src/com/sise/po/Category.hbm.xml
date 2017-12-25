@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sise.po">
+	<class name="Category" table="category">
+		<id name="category_id" type="string">
+			<generator class="uuid" />
+		</id>
+		<property name="category_name" type="string" not-null="true"
+			length="10" />
+		<set name="newsSet" inverse="true" cascade="save-update,persist">
+			<key column="news_category" />
+			<one-to-many class="News" />
+		</set>
+	</class>
+</hibernate-mapping>
